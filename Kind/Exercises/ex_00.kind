@@ -35,11 +35,9 @@ neg(b: Bool): Bool
 // And
 // Returns true if both inputs are true
 and(a: Bool, b: Bool): Bool
-  case a b {
-    true true:    Bool.true
-    false false:  Bool.false
-    false true:   Bool.false
-    false false:  Bool.true
+  case a {
+    true: b 
+    false: a 
   }
  
 
@@ -102,4 +100,5 @@ case a b {
   }
 
 //nome da funcao(nome da varaivel: tipo): retorno
-
+ex_00:_ 
+  eql(false, false)

@@ -28,9 +28,18 @@ is_zero(a: Nat): Bool
 
   // lista [inc(10), dec(10)]
 
+<<<<<<< HEAD
 ex_03: _
   IO {
     Tests._03.inc(inc)
     Tests._03.dec(dec)
     Tests._03.is_zero(is_zero)
   }
+=======
+ex_03: IO<Unit>
+  IO { 
+     IO.print(Nat.show(inc(10)))
+     IO.print(Nat.show(dec(10)))
+     IO.print(Bool.show(is_zero(1)))
+  } 
+>>>>>>> 0c2dc05 (0w0)
