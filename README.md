@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Exercises to Kindelia classes
 
 Exercises for learning [Kind](https://github.com/Kindelia/Kind#readme) language and [HVM](https://github.com/Kindelia/HVM#readme). 
@@ -48,24 +48,3 @@ git checkout main
 git rebase upstream/main
 ```
 
-=======
-# KINDelia class
-
-Exercícios de lógica da linguagem de programação funcional KIND:
-- [x] ex_00
-- [x] ex_01
-- [x] ex_02
-- [] ex_03
-- [] ex_04
-- [] ex_05
-- [] ex_06
-- [] ex_07
-
-Exercícios de programação KIND em games:
-- [] game_01_rps
-- [] game_02_rps
-
-Exercícios de teoremas em KIND
-- [] th_00
-- [] th_01
->>>>>>> 0c2dc05 (0w0)
