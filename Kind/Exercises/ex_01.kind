@@ -72,14 +72,8 @@ create(a: Bool): MaybeBool
 or(a: MaybeBool, b: MaybeBool) : MaybeBool 
   case a b {
     none none: MaybeBool.none
-<<<<<<< HEAD
     none some: b 
   } default a
 
 ex_01:_
   or(MaybeBool.some(false), MaybeBool.some(false))
-=======
-    none some: b
-  } default a
-
->>>>>>> 90626ad (update)
