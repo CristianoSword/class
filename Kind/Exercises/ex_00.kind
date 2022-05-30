@@ -100,3 +100,6 @@ case a b {
     true false:   Bool.false
     true true:    Bool.true
   }
+
+//nome da funcao(nome da varaivel: tipo): retorno
+

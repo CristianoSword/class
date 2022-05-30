@@ -70,4 +70,8 @@ neg(pair: PairBool): PairBool
 swap(pair: PairBool): PairBool 
   case pair {
     new: PairBool.new(pair.snd, pair.fst)
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> 90626ad (update)
