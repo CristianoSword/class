@@ -42,7 +42,7 @@ eql(a: PairBool, b: PairBool): Bool
 // Returns true if both Pairs are different
 // not_eql(PairBool.new(false, false), PairBool.new(true, true)) -> true 
 // not_eql(PairBool.new(true, false), PairBool.new(true, false)) -> false
-not_eql(a: PairBool, b: PairBool): Bool
+not_eql(a: PairBool, b: PairBool): Bool //nao consegui fazer ainda
   case a b{
     new new: case a.fst b.fst{
       true false: true
@@ -69,5 +69,9 @@ swap(pair: PairBool): PairBool
     new: PairBool.new(pair.snd, pair.fst)
   }
 
-aulas: Bool
-    eql((false, false),(false, false))
+ex_02:_
+  //swap(PairBool.new(true, false))
+  not_eql(PairBool.new(true, false), PairBool.new(true, false))
+
+
+//NomeDoTipo.nomedoconstrutor(paramêtro1, parâmetro2)
