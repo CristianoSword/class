@@ -14,18 +14,11 @@ is_none(a: MaybeBool): Bool
     
 // Returns true if Maybe is some
 is_some(a: MaybeBool): Bool
-<<<<<<< HEAD
-   case a {
-     none: false
-     some: true 
-   }
-=======
   case a {
     none: false
     some: true
   }
 
->>>>>>> 90626ad (update)
 // Returns true if both inputs are identical
 // eql(MaybeBool.none,             MaybeBool.none            ) -> true
 // eql(MaybeBool.some(Bool.false), MaybeBool.none            ) -> false
@@ -34,38 +27,23 @@ is_some(a: MaybeBool): Bool
 
 eql(a: MaybeBool, b: MaybeBool): Bool
   case a b {
-<<<<<<< HEAD
-    none none : true
-    some some: Bool.eql(a.value, b.value)
-  } default false
-=======
     none none: true
     some some: Bool.eql(a.value, b.value)
   } 
 
->>>>>>> 90626ad (update)
 
 // Returns the value inside the MaybeBool.
 // If there is no value contained, returns v instead
 extract(a: MaybeBool, v: Bool): Bool
   case a {
-<<<<<<< HEAD
-    none: v 
-=======
     none: v
->>>>>>> 90626ad (update)
     some: a.value
   }
 
 // Create a MaybeBool from a Boolean
 // create(Bool.false) -> MaybeBool(Bool.false)
-<<<<<<< HEAD
-create(a:Bool): MaybeBool
-  MaybeBool.some(a)
-=======
 create(a: Bool): MaybeBool
   MaybeBool.some(a) 
->>>>>>> 90626ad (update)
 
 // Returns the first input that is a MaybeBool.some
 // Returns MaybeBool.none if both are MaybeBool.none

@@ -31,12 +31,9 @@ eql_elements(a: PairBool): Bool
 // eql(PairBool.new(true, false), PairBool.new(true, false)) -> true
 eql(a: PairBool, b: PairBool): Bool
   case a b {
-    new new new new: case a.fst a.snd b.fst b.snd { //deixei esse aqui só pra perguntar sobre varios new's
+    new new: case a.fst a.snd { 
       true false: false
       false true: false
-      
-      true true: true
-      false false: false 
 
     }
     default false
@@ -47,12 +44,12 @@ eql(a: PairBool, b: PairBool): Bool
 // not_eql(PairBool.new(true, false), PairBool.new(true, false)) -> false
 not_eql(a: PairBool, b: PairBool): Bool
   case a b{
-    new new: case a.fst b.fst
+    new new: case a.fst b.fst{
       true false: true
       false true: true
   }
-  default case a.snd b.snd
-  
+  default false
+}
 // Creates a PairBool from 2 Booleans
 create(a: Bool, b: Bool): PairBool
   PairBool.new(a,b)
@@ -71,3 +68,6 @@ swap(pair: PairBool): PairBool
   case pair {
     new: PairBool.new(pair.snd, pair.fst)
   }
+
+aulas: Bool
+    eql((false, false),(false, false))
